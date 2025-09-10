@@ -1,3 +1,13 @@
+# Informe de Auditoría de Sistemas - Examen de la Unidad I
+
+**Nombres y apellidos:** Ivan Francisco Málaga Espinoza
+**Fecha:** 10/09/2025
+**URL GitHub:** https://github.com/IvaFraMa/1UnidadExamenAuditoria_Malaga.git
+
+---
+
+## Pasos previos:
+
 # Gestión de Riesgos para Activos Digitales
 
 ## Descripción del Proyecto
@@ -42,7 +52,9 @@ cd AuditoriaRiesgos
 ```bash
 cd frontend
 npm install
+(imagenes/1.png)
 npm run dev
+(imagenes/2.png)
 ```
 El FRONT estará disponible en: http://localhost:5173
 
@@ -64,21 +76,26 @@ ollama run llama2:7b
 ollama pull llama2:7b
 ollama run llama2:7b
 ```
+(imagenes/3.png)
+(imagenes/4.png)
 
    Opcionalmente, puede verificar el estado del servicio:
 ```bash
 tasklist | findstr ollama
 ```
+(imagenes/5.png)
 
 ### 4. Iniciar el BACKEND servidor Flask
 
 ```bash
 python app.py
 ```
+
 Nota: Si encuentras problemas con la versión de Python, prueba con el numero de versión Python que instalaste, por ejemplo:
 ```bash
 python3.9 app.py
 ```
+(imagenes/6.png)
 
 ## Solución de Problemas Comunes
 
@@ -87,6 +104,7 @@ python3.9 app.py
 Ejecuta:
 ```bash
 npm ci --force  # Para frontend
+(imagenes/7.png)
 pip install --upgrade -r requirements.txt  # Para backend
 ```
 
@@ -122,11 +140,6 @@ taskkill /F /IM ollama.exe
 ```
 
 
-# Informe de Auditoría de Sistemas - Examen de la Unidad I
-
-**Nombres y apellidos:**
-**Fecha:**
-**URL GitHub:**
 
 ---
 
@@ -136,9 +149,9 @@ taskkill /F /IM ollama.exe
 
 **Evidencia:**
 *(Aquí va la captura del login)*
-![Captura del login](ruta/a/la/imagen_login.png)
+![Captura del login](imagenes/8.png)
+*Ingresamos las credenciales del admin con la contraseña 123456 y estaremos logueados como admin*
 
-**Descripción:** *(Breve explicación de cómo se implementó el inicio de sesión ficticio).*
 
 ---
 
@@ -154,14 +167,14 @@ taskkill /F /IM ollama.exe
 
 ## 2. Hallazgos
 
-### Activo 1: (título del activo)
-* **Evidencia:** (Captura)
+### Activo 1: Servidor de base de datos
+* **Evidencia:** (imagenes/11.png) 
 * **Condición:** (Situación encontrada en el activo)
 * **Recomendación:** (Acción correctiva o preventiva)
 * **Riesgo:** Probabilidad (Baja/Media/Alta)
 
 ### Activo 2: (título del activo)
-* **Evidencia:** (Captura)
+* **Evidencia:** (imagenes/11.png)
 * **Condición:** (Situación encontrada en el activo)
 * **Recomendación:** (Acción correctiva o preventiva)
 * **Riesgo:** Probabilidad (Baja/Media/Alta)
