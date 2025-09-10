@@ -52,7 +52,12 @@ def obtener_tratamiento( riesgo ):
     response = client.chat.completions.create(
     model="ramiro:instruct",
     messages=[
-    {"role": "system", "content": "Responde en español, eres una herramienta para gestion de riesgos de la iso 27000, el usuario, te ingresara un asset tecnologico, un riesgo y un impacto, tu debes responder con un posible tratamiento en menos de 200 caracteres"},
+    {"role": "system", "content": """
+        Eres un asistente experto en ciberseguridad y gestión de riesgos bajo la norma ISO 27001. Tu tarea es analizar un activo tecnológico y devolver los resultados exclusivamente en formato JSON.
+        No agregues ninguna explicación o texto fuera del objeto JSON.
+        El JSON debe tener una clave 'analisis' que contenga una lista de objetos. Cada objeto debe tener dos claves: 'riesgo' y 'impacto'.
+        Genera exactamente 5 resultados.
+        """},
     {"role": "user", "content": "mi telefono movil;Acceso no autorizado;un atacante puede acceder a la información personal y confidencial almacenada en el teléfono móvil, como números de teléfono, correos electrónicos y contraseñas"},
     {"role": "assistant",  "content": "Establecer un bloqueo de la pantalla de inicio que requiera autenticación con contraseña o huella digital" },
     {"role": "user", "content": riesgo }

@@ -52,10 +52,12 @@ cd AuditoriaRiesgos
 ```bash
 cd frontend
 npm install
-(imagenes/1.png)
+
 npm run dev
-(imagenes/2.png)
+
 ```
+![Captura](imagenes/1.png)
+![Captura](imagenes/2.png)
 El FRONT estará disponible en: http://localhost:5173
 
 ### 3. Configuración del Backend
@@ -76,14 +78,15 @@ ollama run llama2:7b
 ollama pull llama2:7b
 ollama run llama2:7b
 ```
-(imagenes/3.png)
-(imagenes/4.png)
+![Captura](imagenes/3.png)
+
+![Captura](imagenes/4.png)
 
    Opcionalmente, puede verificar el estado del servicio:
 ```bash
 tasklist | findstr ollama
 ```
-(imagenes/5.png)
+![Captura](imagenes/5.png)
 
 ### 4. Iniciar el BACKEND servidor Flask
 
@@ -95,7 +98,7 @@ Nota: Si encuentras problemas con la versión de Python, prueba con el numero de
 ```bash
 python3.9 app.py
 ```
-(imagenes/6.png)
+![Captura](imagenes/6.png)
 
 ## Solución de Problemas Comunes
 
@@ -104,9 +107,10 @@ python3.9 app.py
 Ejecuta:
 ```bash
 npm ci --force  # Para frontend
-(imagenes/7.png)
+
 pip install --upgrade -r requirements.txt  # Para backend
 ```
+![Captura](imagenes/7.png)
 
 #### Problemas de compatibilidad
 
@@ -159,7 +163,7 @@ taskkill /F /IM ollama.exe
 
 **Evidencia:**
 *(Aquí va la captura del código fuente)*
-![Captura de la sección del código fuente mejorado de IA que permite su funcionamiento](ruta/a/la/imagen_codigo_ia.png)
+![Captura de la sección del código fuente mejorado de IA que permite su funcionamiento](16.png)
 
 **Descripción:** *(Breve explicación de la sección de código mejorado que hace posible el funcionamiento de la IA en el sistema).*
 
@@ -168,34 +172,34 @@ taskkill /F /IM ollama.exe
 ## 2. Hallazgos
 
 ### Activo 1: Servidor de base de datos
-* **Evidencia:** (imagenes/11.png) 
-* **Condición:** (Situación encontrada en el activo)
-* **Recomendación:** (Acción correctiva o preventiva)
+* **Evidencia:** ![Captura](imagenes/11.png) 
+* **Condición:** Pérdida de información valiosa relacionada con Base de datos de cliente
+* **Recomendación:** Cifrado de datos sensibles
+* **Riesgo:** Media, Pérdida de Base de datos de cliente
+
+### Activo 2: API Transacciones
+* **Evidencia:** ![Captura](imagenes/12.png)
+* **Condición:** Pérdida de información valiosa relacionada con API Transacciones
+* **Recomendación:** Implementación de controles de acceso físico
+* **Riesgo:** Alta, Pérdida de API Transacciones
+
+### Activo 3: Aplicación Web de Banca
+* **Evidencia:** ![Captura](imagenes/13.png)
+* **Condición:** Pérdida de información valiosa relacionada con API Transacciones
+* **Recomendación:** Monitoreo continuo de accesos
+* **Riesgo:** Baja, Pérdida de API Transacciones
+
+### Activo 4: Servidor de Correo 
+* **Evidencia:** ![Captura](imagenes/14.png)
+* **Condición:** Implementación de firewall de nueva generación 
+* **Recomendación:** Monitoreo continuo de accesos
 * **Riesgo:** Probabilidad (Baja/Media/Alta)
 
-### Activo 2: (título del activo)
-* **Evidencia:** (imagenes/11.png)
-* **Condición:** (Situación encontrada en el activo)
-* **Recomendación:** (Acción correctiva o preventiva)
-* **Riesgo:** Probabilidad (Baja/Media/Alta)
-
-### Activo 3: (título del activo)
-* **Evidencia:** (Captura)
-* **Condición:** (Situación encontrada en el activo)
-* **Recomendación:** (Acción correctiva o preventiva)
-* **Riesgo:** Probabilidad (Baja/Media/Alta)
-
-### Activo 4: (título del activo)
-* **Evidencia:** (Captura)
-* **Condición:** (Situación encontrada en el activo)
-* **Recomendación:** (Acción correctiva o preventiva)
-* **Riesgo:** Probabilidad (Baja/Media/Alta)
-
-### Activo 5: (título del activo)
-* **Evidencia:** (Captura)
-* **Condición:** (Situación encontrada en el activo)
-* **Recomendación:** (Acción correctiva o preventiva)
-* **Riesgo:** Probabilidad (Baja/Media/Alta)
+### Activo 5: Firewall Perimetral
+* **Evidencia:** ![Captura](imagenes/15.png)
+* **Condición:** Pérdida de información valiosa relacionada con Firewall Perimetral
+* **Recomendación:** Monitoreo continuo de accesos 
+* **Riesgo:** Alta, Pérdida de Servidor de Correo
 
 ---
 
